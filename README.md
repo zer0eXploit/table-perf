@@ -8,12 +8,12 @@ A high-performance Next.js application demonstrating **sliding window virtualiza
 - **Virtual Scrolling** - Renders only visible rows using `@tanstack/react-virtual`
 - **Resizable Columns** - Drag to resize columns with `@tanstack/react-table`
 - **Multi-Tenant Architecture** - Tenant/App hierarchy with isolated data
-- **Production-Ready Performance** - Debounced API calls, optimistic updates, smooth 60fps scrolling
+- **Performance** - Debounced API calls and smooth scrolling
 
 ## Tech Stack
 
-- **Framework**: Next.js 15 (App Router)
-- **UI**: React 19, Tailwind CSS
+- **Framework**: Next.js 16 (App Router)
+- **UI**: React 19, Tailwind CSS, Shadcn UI
 - **Data**: React Query (TanStack Query)
 - **Table**: TanStack Table, TanStack Virtual
 - **Storage**: JSON files (simulated database)
@@ -24,7 +24,7 @@ A high-performance Next.js application demonstrating **sliding window virtualiza
 # Install dependencies
 npm install
 
-# Seed 50,000 records
+# Seed 50,000 records (optional, the seed data is included in the repository)
 node scripts/seed.js
 
 # Start dev server
@@ -36,7 +36,7 @@ Visit `http://localhost:3000`
 ## Project Structure
 
 ```
-app/                    # Next.js App Router
+app/                   # Next.js App Router
 ├── api/apps/          # Data API endpoints
 ├── tenants/           # Tenant list page
 └── apps/[app-id]/     # App data viewer (main table)
@@ -57,7 +57,6 @@ Unlike infinite scroll (which appends data indefinitely), the sliding window:
 
 ## Performance
 
-- **Initial Load**: ~50ms (only fetches 50 rows)
-- **Scroll Performance**: 60fps with debounced fetches (300ms)
-- **Memory**: Constant (~2MB for visible data)
-- **API Calls**: Minimal (only on scroll range changes)
+- **Initial Load**: only fetches 50 rows
+- **Scroll Performance**: smooth scrolling with debounced API calls
+- **Memory**: Constant
