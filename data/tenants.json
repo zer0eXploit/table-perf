@@ -1,0 +1,37 @@
+[
+  {
+    "id": "tenant_1",
+    "name": "Acme Corporation",
+    "subdomain": "acme",
+    "createdAt": "2024-07-30T23:12:46.741Z",
+    "totalApps": 3
+  },
+  {
+    "id": "tenant_2",
+    "name": "TechFlow Solutions",
+    "subdomain": "techflow",
+    "createdAt": "2024-06-10T00:26:17.239Z",
+    "totalApps": 3
+  },
+  {
+    "id": "tenant_3",
+    "name": "Global Analytics LLC",
+    "subdomain": "globalanalytics",
+    "createdAt": "2025-03-12T10:16:12.287Z",
+    "totalApps": 3
+  },
+  {
+    "id": "tenant_4",
+    "name": "DataStream Enterprises",
+    "subdomain": "datastream",
+    "createdAt": "2024-09-08T09:48:36.061Z",
+    "totalApps": 3
+  },
+  {
+    "id": "tenant_5",
+    "name": "CloudNine Systems",
+    "subdomain": "cloudnine",
+    "createdAt": "2025-01-18T06:36:11.289Z",
+    "totalApps": 3
+  }
+]
